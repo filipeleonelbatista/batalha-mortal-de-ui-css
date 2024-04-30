@@ -25,8 +25,8 @@ Contra argumentos não há argumentos.
 
 Teste feito com a instalação base de `react`, `vite` e suas respectivas libs para fazer um ToDo app corroboraram com este estudo. Criando os componentes com o Styled Components e com o Tailwindcss, e no MUI ja tem os componentes criados, apenas estilizando para que todos fiquem iguais.
 
-[FIGMA]()
-[GITHUB DO APP]()
+[FIGMA](https://www.figma.com/file/xqqjskp9c7FMrWyXQ8SYVq/ToDo-List-%E2%80%A2-Desafio-React-Native-(Copy)?type=design&node-id=101%3A96&mode=design&t=WKaIniP8AlhACRbI-1)
+[GITHUB DO APP](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css)
 
 Em termos de performance, Tailwind e Styled Components tendem a ser escolhas mais eficientes em comparação com UI Kits, dependendo da implementação e uso adequado. Tailwind se destaca em tamanho de arquivo e velocidade de desenvolvimento, enquanto Styled Components oferece flexibilidade e componentização para estilização.
 
