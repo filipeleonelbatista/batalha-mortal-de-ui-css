@@ -8,27 +8,20 @@ Para o teste da UI Kit eu usei MUI para poder ter uma idéia melhor.
 
 ---
 
-| | UI Kit | ✅ Tailwind | Styled Components |
 
-|---------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|                  | UI Kit                                                                                                | ✅ Tailwind                                                                                       | Styled Components                                                                              |
+|------------------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Prós:            | - Consistência Visual: Oferece componentes predefinidos para manter uma aparência consistente...     | - Utilização Direta de Classes: Facilita a criação de UIs responsivas e estilizadas aplicando... | - Componentização: Encoraja a reutilização de estilos.                                           |
+|                  | - Facilidade de Uso: Simples de implementar e usar, especialmente para iniciantes.                     | - Personalização Flexível: Flexibilidade para personalizar estilos sem escrever CSS personalizado.| - CSS-in-JS: Escopo de estilos por componente, evitando conflitos de classe.                     |
+|                  | - Rápido Desenvolvimento: Acelera o processo de desenvolvimento, com muitos componentes prontos...     | - Tamanho Pequeno: Resulta em um tamanho de aplicativo menor, incluindo apenas as classes utilizadas.| - Flexibilidade: Criação de estilos dinâmicos e responsivos.                                   |
+| Contras:         | - Personalização Limitada: Difícil de personalizar para atender às necessidades específicas do...     | - Curva de Aprendizado: Pode ser desafiador para iniciantes devido à abordagem baseada em classes.| - Curva de Aprendizado: Para quem não está familiarizado com CSS-in-JS.                        |
+|                  | - Peso Adicional: Alguns kits podem aumentar o tamanho do aplicativo.                                  | - Potencial Inchaço de HTML: Uso extensivo de classes pode levar a HTML mais inchado.           | - Possível Impacto na Performance: Se não usado corretamente, pode afetar o desempenho.         |
+| Nota de Performance: | 3/5                                                                                                  | 4/5                                                                                              | 3.5/5                                                                                            |
+| Tempo de desenvolvimento: | 2hs                                                                                              | 40 min                                                                                           | 2h45min                                                                                          |
+| Nota de Produtividade: | Média                                                                                               | Alta                                                                                             | Baixa                                                                                            |
+| Desempenho:      | Potencial impacto no desempenho devido ao peso adicional dos componentes e falta de otimização.      | Geralmente boa performance, especialmente em termos de tamanho do aplicativo e velocidade de desenvolvimento. | Performance variável dependendo da organização e renderização de estilos.                        |
 
-| **Prós:** | - Consistência Visual: Oferece componentes predefinidos para manter uma aparência consistente... | - Utilização Direta de Classes: Facilita a criação de UIs responsivas e estilizadas aplicando... | - Componentização: Encoraja a reutilização de estilos. |
 
-| | - Facilidade de Uso: Simples de implementar e usar, especialmente para iniciantes. | - Personalização Flexível: Flexibilidade para personalizar estilos sem escrever CSS personalizado.| - CSS-in-JS: Escopo de estilos por componente, evitando conflitos de classe. |
-
-| | - Rápido Desenvolvimento: Acelera o processo de desenvolvimento, com muitos componentes prontos... | - Tamanho Pequeno: Resulta em um tamanho de aplicativo menor, incluindo apenas as classes utilizadas.| - Flexibilidade: Criação de estilos dinâmicos e responsivos. |
-
-| **Contras:** | - Personalização Limitada: Difícil de personalizar para atender às necessidades específicas do... | - Curva de Aprendizado: Pode ser desafiador para iniciantes devido à abordagem baseada em classes.| - Curva de Aprendizado: Para quem não está familiarizado com CSS-in-JS. |
-
-| | - Peso Adicional: Alguns kits podem aumentar o tamanho do aplicativo. | - Potencial Inchaço de HTML: Uso extensivo de classes pode levar a HTML mais inchado. | - Possível Impacto na Performance: Se não usado corretamente, pode afetar o desempenho. |
-
-| **Nota de Performance:** | 3/5 | 4/5 | 3.5/5 |
-
-| **Tempo de desenvolvimento:** | 2hs | 40 min | 2h45min |
-
-| **Nota de Produtividade:** | Média | Alta | Baixa |
-
-| **Desempenho:**| Potencial impacto no desempenho devido ao peso adicional dos componentes e falta de otimização. | Geralmente boa performance, especialmente em termos de tamanho do aplicativo e velocidade de desenvolvimento. | Performance variável dependendo da organização e renderização de estilos. |
   
 ---
 
@@ -60,17 +53,28 @@ npm run dev #para iniciar a aplicação
 Rodando na minha maquina cada um dos projetos criados tive o seguinte resultado do lighthouse do DevTools.
 
 ### MUI
-| | Performance | Acessibilidade | Melhores Práticas | SEO | |----------|-------------|----------------|-------------------|-----| | Desktop | 70 | 93 | 100 | 82 | | Mobile | 55| 93 | 96 | 85 |
+|                | Performance | Acessibilidade | Melhores Práticas | SEO |
+|----------------|-------------|----------------|-------------------|-----|
+| Desktop        | 70          | 93             | 100               | 82  |
+| Mobile         | 55          | 93             | 96                | 85  |
+
 
 Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_mui.pdf) e no [Relatório Mobile](./.github/report_mui_mobile.pdf) sobre este teste.
 
 ### TailwindCSS
-| | Performance | Acessibilidade | Melhores Práticas | SEO | |----------|-------------|----------------|-------------------|-----| | Desktop | 93 | 82 | 93 | 82 | | Mobile | 63 | 82| 93 | 85 |
+|                | Performance | Acessibilidade | Melhores Práticas | SEO |
+|----------------|-------------|----------------|-------------------|-----|
+| Desktop        | 93          | 82             | 93                | 82  |
+| Mobile         | 63          | 82             | 93                | 85  |
 
 Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_tailwindcss.pdf) e no [Relatório Mobile](./.github/report_tailwindcss_mobile.pdf) sobre este teste.
 
 ### Styled Components
-| | Performance | Acessibilidade | Melhores Práticas | SEO | |----------|-------------|----------------|-------------------|-----| | Desktop | 91 | 91 | 96 | 82 | | Mobile | 61 | 91 | 96 | 85 |
+|                | Performance | Acessibilidade | Melhores Práticas | SEO |
+|----------------|-------------|----------------|-------------------|-----|
+| Desktop        | 91          | 91             | 96                | 82  |
+| Mobile         | 61          | 91             | 96                | 85  |
+
 
 Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_styled_components.pdf) e no [Relatório Mobile](./.github/report_styled_components_mobile.pdf) sobre este teste.
 
