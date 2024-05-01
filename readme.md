@@ -1,5 +1,3 @@
-## Batalha Mortal: Tailwindcss, StyledComponents, UI Kit(MUI)
-
 ![Tailwind vs MUI vs StyledComponents](https://cdn.hashnode.com/res/hashnode/image/upload/v1688149717025/eb082877-c5e2-4ddf-9f51-7b741d8b5f84.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp)
 
 Quando se trata de desenvolver interfaces de usuário eficientes e visualmente atraentes, a escolha da abordagem de estilização certa desempenha um papel crucial. Quero trazer essa briga de juniores para discutirmos qual realmente é a melhor 😂 e exploraremos as vantagens e desvantagens de três abordagens populares: UI Kits, Tailwind e Styled Components, com foco especial na sua performance.
@@ -25,13 +23,13 @@ Para o teste da UI Kit eu usei MUI para poder ter uma idéia melhor.
   
 ---
 
-Contra argumentos não há argumentos.
-
-Teste feito com a instalação base de `react`, `vite` e suas respectivas libs para fazer um ToDo app corroboraram com este estudo. Criando os componentes com o Styled Components e com o Tailwindcss, e no MUI ja tem os componentes criados, apenas estilizando para que todos fiquem iguais.
+Teste feito com a instalação base de `react`, `vite` e suas respectivas libs para fazer um TODO App para analisar neste estudo. Criando os componentes com o Styled Components e com o Tailwindcss direto no codigo, e no MUI já tem os componentes criados, apenas estilizando para que todos fiquem mais próximos da realidade.
 
 [FIGMA Modelo de UI do App que usei](https://www.figma.com/file/xqqjskp9c7FMrWyXQ8SYVq/ToDo-List-%E2%80%A2-Desafio-React-Native-(Copy)?type=design&node-id=101%3A96&mode=design&t=WKaIniP8AlhACRbI-1)
 
 [Repositório no github](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css)
+
+### Teste você mesmo
 
 Para entender como foi organizado, desenvolvi os apps em cada branch, então para testar basta mudar para a branch que quiser e ver o codigo.
 ```
@@ -49,6 +47,9 @@ npm install
 npm run dev #para iniciar a aplicação
 ```
 
+![Qual é o melhor?](https://i.pinimg.com/originals/64/03/3d/64033de6ca56ee642e69ab42937040c2.gif)
+Então qual é o melhor?
+
 ## Resultados
 Rodando na minha maquina cada um dos projetos criados tive o seguinte resultado do lighthouse do DevTools.
 
@@ -59,7 +60,7 @@ Rodando na minha maquina cada um dos projetos criados tive o seguinte resultado 
 | Mobile         | 55          | 93             | 96                | 85  |
 
 
-Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_mui.pdf) e no [Relatório Mobile](./.github/report_mui_mobile.pdf) sobre este teste.
+Mais detalhes podem ser vistos no [Relatório Desktop](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css/blob/main/.github/report_mui.pdf) e no [Relatório Mobile](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css/blob/main/.github/report_mui_mobile.pdf) sobre este teste.
 
 ### TailwindCSS
 |                | Performance | Acessibilidade | Melhores Práticas | SEO |
@@ -67,7 +68,7 @@ Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_mui.pdf)
 | Desktop        | 93          | 82             | 93                | 82  |
 | Mobile         | 63          | 82             | 93                | 85  |
 
-Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_tailwindcss.pdf) e no [Relatório Mobile](./.github/report_tailwindcss_mobile.pdf) sobre este teste.
+Mais detalhes podem ser vistos no [Relatório Desktop](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css/blob/main/.github/report_tailwindcss.pdf) e no [Relatório Mobile](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css/blob/main/.github/report_tailwindcss_mobile.pdf) sobre este teste.
 
 ### Styled Components
 |                | Performance | Acessibilidade | Melhores Práticas | SEO |
@@ -76,13 +77,15 @@ Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_tailwind
 | Mobile         | 61          | 91             | 96                | 85  |
 
 
-Mais detalhes podem ser vistos no [Relatório Desktop](./.github/report_styled_components.pdf) e no [Relatório Mobile](./.github/report_styled_components_mobile.pdf) sobre este teste.
+Mais detalhes podem ser vistos no [Relatório Desktop](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css/blob/main/.github/report_styled_components.pdf) e no [Relatório Mobile](https://github.com/filipeleonelbatista/batalha-mortal-de-ui-css/blob/main/.github/report_styled_components_mobile.pdf) sobre este teste.
 
-Em termos de performance, Tailwind e Styled Components tendem a ser escolhas mais eficientes em comparação com UI Kits, dependendo da implementação e uso adequado. Tailwind se destaca em tamanho de arquivo e velocidade de desenvolvimento, enquanto Styled Components oferece flexibilidade e componentização para estilização.
+Em termos de performance, Tailwind e Styled Components tendem a ser escolhas mais eficientes em comparação com UI Kits, dependendo da implementação e uso adequado. Tailwind se destaca em tamanho de arquivo e velocidade de desenvolvimento, enquanto Styled Components oferece flexibilidade e componentização para estilização, ao que Ui kits se preocupam com SEO e com acessibilidade onde se o desenvolvedor não prestar atenção a esses detalhes pode acabar perdendo neste ponto, o que pode impactar na entrega do app final para o cliente.
+
+![Isso é um fato!](https://i.pinimg.com/originals/36/f5/f4/36f5f4bffe5726ad157bb93ff26d4527.gif)
 
 Agora como um verdadeiro sênior diria:  
 
-Jr: Qual eu devo usar na minha aplicação
+Jr: Qual eu devo usar na minha aplicação?
 
 Sr: Depende!  
 
